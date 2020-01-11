@@ -1,14 +1,24 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.springframework.org/schema/data/jaxb">
 <head>
-    <title>main4</title>
+    <title>main</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
 <body>
-    <h1>HELLO</h1>
-    <div th:text="${a}"/>
+<h1>HELLO</h1>
+<div th:text="${a}"/>
+
+<h3>getHeaderEx</h3>
+<div th:text="${b}"/>
+
+<h3>POST</h3>
+
+<form method="post" th:action="@{/main}">
+    <div><input type="text" name="TEXT" placeholder="Введите text"/></div>
+    <button type="submit">Добавить</button>
+</form>
 </body>
 </html>
